@@ -1,0 +1,17 @@
+.Header{
+    min-height: 100px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Header a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.Header a[class='active']{
+    color: black;
+}
