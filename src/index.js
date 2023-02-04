@@ -4,19 +4,17 @@ import {BrowserRouter} from "react-router-dom";
 
 import {App} from './App';
 import './index.css';
+import {AuthProvider} from "./hoc/AuthProvider";
 
-export const CreateContext = createContext(null);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
-    <CreateContext.Provider value={{name:"Tanya", age:"26"}}>
-
-    <BrowserRouter>
-    <App />
-    </BrowserRouter>
-
-    </CreateContext.Provider>
+    <AuthProvider>
+        <BrowserRouter>
+        <App />
+        </BrowserRouter>
+    </AuthProvider>
 
 );
 

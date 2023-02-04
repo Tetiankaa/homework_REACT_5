@@ -1,12 +1,11 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {Comments} from "../../components";
-import {CreateContext} from "../../index";
 
 const CommentsPages = () => {
-    const context = useContext(CreateContext);
-    context.status = false.toString();
-    Object.assign(context,{gender:'woman'})
-    delete context.age
+    // const context = useContext(CreateContext);
+    // context.status = false.toString();
+    // Object.assign(context,{gender:'woman'})
+    // delete context.age
 
     return (
         <div>
