@@ -20,6 +20,7 @@ const Posts = ({postId}) => {
                     <div>userId:{post.userId}</div>
                     <div>title:{post.title}</div>
                     <div>body:{post.body}</div>
+                    <div></div>
                 </>
             }
 
